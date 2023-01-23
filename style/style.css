@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@500;700&family=Bree+Serif&family=Dancing+Script:wght@700&family=Lato:ital,wght@0,400;0,700;0,900;1,400&family=Libre+Baskerville:wght@700&family=Montserrat:wght@300;400;500&family=Rubik+Gemstones&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bgColorDark: #0e0b16;
+  --bgColorDark2: #2e2d2f;
+  --bgColorDark3: #474649;
+  --bgColorLight: #e7dfdd;
+  --blueColor: #4717f6;
+  --pinkColor: #a239ea;
+  --pinkHoverColor: #912ed3;
+  --fColorKhakestari: rgba(255, 255, 255, 0.55);
+  --whiteColor: #fff;
+  --c1c1Color: #c1c1c1;
+  --fColorNokmedadi: #101010;
+  --fColorAboutPage: #abaaaa;
+}
+body {
+  background: var(--bgColorDark2);
+  font-family: "Roboto", sans-serif;
+  font-family: "Bree Serif", serif;
+}
+main {
+  margin-top: 56px;
+}
+h5 {
+  color: white;
+}
+.card {
+  border: none !important;
+  box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.15) !important;
+}
+.card .card-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.card .card-text {
+  font-size: 14px;
+}
+.card a {
+  font-size: 14px;
+  background-color: var(--pinkColor);
+  border-color: var(--pinkColor);
+}
+.card .btn:hover {
+  color: white;
+  background-color: var(--pinkHoverColor) !important;
+  border-color: var(--pinkColor) !important;
+}
+
+.container .card-img-top {
+  width: 80%;
+  height: 200px;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+/* ======================================= */
+.d-flex {
+  display: flex;
+}
+.pos-rel {
+  position: relative;
+}
+main .carousel-slider {
+  box-shadow: none;
+  justify-content: center;
+}
+
+main .carousel-indicators {
+  bottom: 0;
+  padding-bottom: 15px;
+  box-shadow: none;
+}
+
+main .carousel-indicators .indicator {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  margin: 0px 4px;
+}
+
+.arrow-icon {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 46%;
+
+  border-top: 3px solid #0f1822;
+  border-right: 3px solid #0f1822;
+}
+.next-icon {
+  transform: rotate(45deg);
+  right: 1.1rem;
+}
+.prev-icon {
+  transform: rotate(-135deg);
+  opacity: 0.35;
+  left: 1.1rem;
+}
+.slider img {
+  width: 100%;
+}

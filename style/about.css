@@ -1,0 +1,13 @@
+.container {
+  color: var(--whiteColor);
+}
+.row {
+  padding-left: 2rem;
+}
+.icon {
+  margin-right: 5px;
+  color: var(--pinkColor);
+}
+.col-6 {
+  color: var(--fColorAboutPage);
+}

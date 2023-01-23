@@ -1,0 +1,61 @@
+nav {
+  background: var(--bgColorDark) !important;
+}
+.navbar-brand {
+  font-family: "Dancing Script", cursive;
+}
+.search-btn {
+  background-color: var(--pinkColor) !important;
+  border-color: var(--pinkColor) !important;
+}
+.search-btn:hover {
+  background-color: var(--pinkHoverColor) !important;
+  border-color: var(--pinkHoverColor) !important;
+}
+.login-box {
+  display: none;
+}
+.login-cyrcle {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: red;
+  color: var(--whiteColor);
+  margin-left: 5px;
+}
+.user {
+  color: var(--whiteColor);
+  margin: auto;
+  padding-left: 5px;
+}
+
+footer {
+  border-top: 1px solid var(--bgColorDark);
+  width: 95%;
+  margin: auto;
+  padding-bottom: 0.5rem;
+}
+footer h6 {
+  color: var(--fColorKhakestari);
+}
+footer a {
+  text-decoration: none;
+  color: var(--pinkColor);
+}
+footer h6 {
+  margin-top: auto;
+}
+footer i {
+  font-size: 2rem;
+  color: var(--pinkColor);
+}
+.theme {
+  color: #f3e11a;
+  font-size: 1rem;
+  margin-left: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}

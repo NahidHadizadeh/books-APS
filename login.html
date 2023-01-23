@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- bootstrap icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <!-- style links -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/header-footer-style.css" />
+    <link rel="stylesheet" href="style/login-and-register.css" />
+
+    <title>SignIn/SignUp</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="login-page">
+        <div class="form">
+          <form class="login-form">
+            <input id="username" type="text" placeholder="username" />
+            <input id="password" type="password" placeholder="password" />
+            <button>Sign In</button>
+            <p class="message">
+              Not registered? <a href="register.html">Sign Up</a>
+            </p>
+            <p name="notMach" id="notMach" class="message"></p>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/header-and-footer.js"></script>
+    <script type="module" src="js/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container,
+button {
+  color: var(--whiteColor);
+  font-size: 14px;
+}
+.profile-image-box {
+  position: relative;
+}
+.profile-image {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  background-color: orange;
+}
+.image {
+  border-radius: 50%;
+  margin-top: 13px;
+}
+.edit-image {
+  position: absolute;
+  content: "";
+  left: 185px;
+  bottom: -8px;
+}
+.bi-camera {
+  font-size: 30px;
+  color: aquamarine;
+}
+.col-right {
+  padding-left: 5rem;
+}
+.desc-user {
+  margin-top: 4rem;
+}
+.desc-user p {
+  margin-bottom: 0;
+}
+.books {
+  outline: auto;
+  font-size: 14px;
+}
+strong {
+  font-size: 1.5rem;
+}
+.title-book {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.buttonMe {
+  background-color: var(--pinkColor) !important;
+  border-color: var(--pinkColor) !important;
+}
+.buttonMe:hover {
+  background-color: var(--pinkHoverColor) !important;
+  border-color: var(--pinkHoverColor) !important;
+}
+.bi-camera {
+  cursor: pointer;
+}
+.username {
+  font-size: 14px;
+}
+.usernameElem {
+  font-size: 16px;
+}
+.descriptions {
+  line-height: 1.2;
+}

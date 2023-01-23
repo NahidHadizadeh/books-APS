@@ -1,0 +1,53 @@
+.container,
+a {
+  color: var(--whiteColor);
+}
+.title-pTag {
+  margin-left: 3rem;
+}
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 5px;
+}
+.subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.auther {
+  color: var(--whiteColor);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.image-book {
+  display: inline-block;
+}
+.description {
+  color: var(--c1c1Color);
+  font-size: 12px;
+  margin-top: 0.5rem;
+}
+.pdf-file {
+  margin: 0 auto;
+  font-size: 12px;
+}
+
+.text-author {
+  margin-left: 0.5rem;
+}
+main {
+  min-height: 509px;
+}
+
+@media (max-width: 767px) {
+  .image-box {
+    text-align: center !important;
+  }
+  .auther {
+    margin-top: 1rem;
+  }
+  .title-pTag {
+    margin-left: 0;
+  }
+}
