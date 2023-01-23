@@ -32,7 +32,6 @@ export function darkOrLightMode(themeElem) {
       flag = "moon";
     }
     if (flag === "sun") {
-      alert(flag);
       document.documentElement.style.setProperty("--bgColorDark2", "#fff");
       document.documentElement.style.setProperty("--whiteColor", "#2e2d2f");
       document.documentElement.style.setProperty("--c1c1Color", "#2e2d2f");
