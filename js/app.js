@@ -155,7 +155,6 @@ getData();
 // ================================================= start search item and show it
 const searchInput = document.querySelector(".searchElement");
 searchInput.addEventListener("keyup", (e) => {
-  console.log("key up");
   const searchTerm = e.target.value.toLowerCase();
   let myArr = [];
   eallbooks?.map((p) => {

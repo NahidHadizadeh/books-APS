@@ -61,9 +61,7 @@ h5 {
   margin: 0 auto;
 }
 /* ======================================= */
-.d-flex {
-  display: flex;
-}
+
 .pos-rel {
   position: relative;
 }

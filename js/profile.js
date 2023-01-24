@@ -29,13 +29,14 @@ window.addEventListener("load", () => {
 const booksBoxElem = document.querySelector(".books-box");
 
 // ====================get data
+let allBooks = null;
 async function getdata() {
   try {
     const res = await fetch(
       "https://www.googleapis.com/books/v1/volumes?q=flowers+inauthor"
     );
     const data = await res.json();
-    const allBooks = data.items;
+    allBooks = data.items;
 
     allBooks.map((book) => {
       makeBook(book);
@@ -71,3 +72,24 @@ function makeBook(book) {
 // ==================================== handel theme page
 const themeElem = document.querySelector(".bi");
 darkOrLightMode(themeElem);
+
+// ================================================= start search item and show it
+const searchInput = document.querySelector(".searchElement");
+searchInput.addEventListener("keyup", (e) => {
+  const searchTerm = e.target.value.toLowerCase();
+  let arrayOfBooksSearch = [];
+  allBooks?.map((p) => {
+    if (p.volumeInfo.title.toLowerCase().includes(searchTerm)) {
+      arrayOfBooksSearch.push(p);
+    }
+    booksBoxElem.innerHTML = "";
+    if (arrayOfBooksSearch.length != 0) {
+      arrayOfBooksSearch.map((product) => {
+        makeBook(product);
+      });
+    } else {
+      booksBoxElem.innerHTML = "<h5>nothing found ....</h5>";
+    }
+  });
+});
+// ================================================= end search item and show it
