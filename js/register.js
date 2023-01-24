@@ -7,8 +7,12 @@ import { addOrRemoveActiveClass, darkOrLightMode } from "../module/module.js";
 
 window.addEventListener("load", () => {
   addOrRemoveActiveClass();
+  // =========================== hidden search form
+  const searchForm = document.querySelector(".form-search");
+  searchForm.classList.remove("d-flex");
+  searchForm.style.display = "none";
 
-  //   =============================
+  //   ============================= set data in indexed DB
 
   let DBOpenReq = indexedDB.open("APS", 13);
 

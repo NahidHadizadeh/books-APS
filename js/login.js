@@ -1,12 +1,18 @@
 //================================add or remove active class in link elem of header
 let allusers = null;
 let db = null;
+let objstorUsers = null;
 
 // =========== function add active class in nav item
 import { addOrRemoveActiveClass, darkOrLightMode } from "../module/module.js";
 
 window.addEventListener("load", () => {
   addOrRemoveActiveClass();
+
+  // =========================== hidden search form
+  const searchForm = document.querySelector(".form-search");
+  searchForm.classList.remove("d-flex");
+  searchForm.style.display = "none";
 
   // =========================== get data in indexed DB
 

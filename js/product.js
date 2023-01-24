@@ -3,6 +3,11 @@
 import { addOrRemoveActiveClass, darkOrLightMode } from "../module/module.js";
 window.addEventListener("load", () => {
   addOrRemoveActiveClass();
+
+  // =========================== hidden search form
+  const searchForm = document.querySelector(".form-search");
+  searchForm.classList.remove("d-flex");
+  searchForm.style.display = "none";
 });
 
 const detailsElem = document.querySelector(".container");

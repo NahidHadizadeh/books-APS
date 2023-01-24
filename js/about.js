@@ -7,4 +7,8 @@ window.addEventListener("load", () => {
 // ============================== handel theme page
 const themeElem = document.querySelector(".bi");
 darkOrLightMode(themeElem);
+
 // =========================== hidden search form
+const searchForm = document.querySelector(".form-search");
+searchForm.classList.remove("d-flex");
+searchForm.style.display = "none";
