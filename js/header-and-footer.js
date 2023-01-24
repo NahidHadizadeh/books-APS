@@ -29,7 +29,7 @@ const headerPage = `<nav
                 <a  class="nav-link profile login" href="login.html">profile</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
+            <form class="d-flex form-search" role="search">
               <input
                 class="form-control me-2 searchElement"
                 type="search"
